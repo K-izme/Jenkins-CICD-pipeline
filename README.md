@@ -32,10 +32,11 @@ curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trust
 ngrok http 8080
 ngrok config add-authtoken <token>
 ```
-
 Connect to jenkins via Internet
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/119cd018-78d5-4bba-9082-5b354fced2f8)
+
+# Start:
 
 Create ubuntu ec2 instance on Aws, install jenkins
 ```
@@ -61,3 +62,18 @@ Then
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/a4994c1a-bdae-436a-85e0-0eb76606a729)
 
+Using Sonarqube for code review
+
+![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/8d8c5632-6266-4309-a603-a1feed806f18)
+
+```
+apt install unzip
+adduser sonarqube
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
+unzip *
+chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
+chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
+cd sonarqube-9.4.0.54424/bin/linux-x86-64/
+./sonar.sh start
+```
+Now sonar running on http://<ec2ipaddress>:9000
