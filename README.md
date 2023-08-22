@@ -1,10 +1,12 @@
+Upcoming:
+
+![231](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/2f493fd4-c814-437b-838a-6e53041409ae)
+
 ```
 npm i
 npm run dev
 localhost:5500
 ```
-
-
 ![image](https://github.com/K-izme/Login-registration-authentication/assets/91515708/57b2d8a8-4fb7-4656-a5d8-40719b4c35a2)
 
 Install jenkins
