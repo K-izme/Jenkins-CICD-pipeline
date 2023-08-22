@@ -30,3 +30,5 @@ ngrok config add-authtoken <token>
 ```
 
 Connect to jenkins via Internet
+
+![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/119cd018-78d5-4bba-9082-5b354fced2f8)
