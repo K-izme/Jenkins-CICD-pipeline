@@ -56,3 +56,8 @@ SG is stateful so edit inbound traffic
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/593824cb-d5aa-4644-9315-28e622ca3f59)
 
 Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
+
+Then
+
+![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/a4994c1a-bdae-436a-85e0-0eb76606a729)
+
