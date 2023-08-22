@@ -12,8 +12,10 @@ Install jenkins
 ```
 docker run -d  --name jenkins -p 8080:8080 -p 50000:50000 -v /kali-linux/var/jenkins/jenkins_cfg jenkins/jenkins:lts
 ```
-
-docker logs <container id> => get password of jenkins container
+```
+docker logs <container id> 
+```
+=> get password of jenkins container
 
 localhost:8080 
 
