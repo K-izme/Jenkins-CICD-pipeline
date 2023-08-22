@@ -9,7 +9,7 @@ localhost:5500
 ```
 ![image](https://github.com/K-izme/Login-registration-authentication/assets/91515708/57b2d8a8-4fb7-4656-a5d8-40719b4c35a2)
 
-Install jenkins
+Install jenkins using docker
 
 ```
 docker run -d  --name jenkins -p 8080:8080 -p 50000:50000 -v /kali-linux/var/jenkins/jenkins_cfg jenkins/jenkins:lts
@@ -36,3 +36,23 @@ ngrok config add-authtoken <token>
 Connect to jenkins via Internet
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/119cd018-78d5-4bba-9082-5b354fced2f8)
+
+Create ubuntu ec2 instance on Aws, install jenkins
+```
+sudo apt update
+sudo apt install openjdk-11-jre
+```
+```
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+```
+SG is stateful so edit inbound traffic
+
+![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/593824cb-d5aa-4644-9315-28e622ca3f59)
+
+Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
