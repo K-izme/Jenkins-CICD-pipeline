@@ -37,6 +37,15 @@ Connect to jenkins via Internet
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/119cd018-78d5-4bba-9082-5b354fced2f8)
 
 # Start:
+Maven
+```
+mvn clean package
+```
+
+```
+docker build -t cicdpipeline .
+docker run -d -p 8010:8080 -t cicdpipeline
+```
 
 Create ubuntu ec2 instance on Aws, install jenkins
 ```
@@ -62,7 +71,7 @@ Then
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/a4994c1a-bdae-436a-85e0-0eb76606a729)
 
-# Using Sonarqube for code review
+# Using Sonarqube for code review ( >= t2.large)
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/8d8c5632-6266-4309-a603-a1feed806f18)
 
