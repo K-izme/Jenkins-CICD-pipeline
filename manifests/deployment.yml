@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jsapp
+  labels:
+    app: jsapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jsapp
+  template:
+    metadata:
+      labels:
+        app: jsapp
+    spec:
+      containers:
+      - name: jsapp
+        image: kietngo255/cicdpipeline:replaceImageTag
+        ports:
+        - containerPort: 8080
