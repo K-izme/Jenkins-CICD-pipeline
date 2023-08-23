@@ -1,4 +1,4 @@
-Upcoming:
+# Upcoming:
 
 ![231](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/2f493fd4-c814-437b-838a-6e53041409ae)
 
@@ -62,7 +62,7 @@ Then
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/a4994c1a-bdae-436a-85e0-0eb76606a729)
 
-Using Sonarqube for code review
+# Using Sonarqube for code review
 
 ![image](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/8d8c5632-6266-4309-a603-a1feed806f18)
 
@@ -76,4 +76,24 @@ chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
 cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 ./sonar.sh start
 ```
-Now sonar running on http://<ec2ipaddress>:9000
+Now sonar running on http://"ec2ipaddress":9000
+
+Create token of Sonarqube => add credential in Jenkins
+
+# Docker config
+
+```
+sudo apt update
+sudo apt install docker.io
+```
+## Grant permission
+```
+sudo su - 
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+```
+Then restart jenkins
+```
+http://<ec2-instance-public-ip>:8080/restart
+```
