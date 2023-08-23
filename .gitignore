@@ -3,3 +3,5 @@ node_modules
 cicd-pipeline.pem:Zone.Identifier
 cicd-pipeline.pemZone.Identifier
 cicd-pipeline.pem
+jenkins-pipeline.pem
+jenkins-pipeline.pemZone.Identifier
