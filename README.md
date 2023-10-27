@@ -1,6 +1,7 @@
 # Upcoming:
 
-![231](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/2f493fd4-c814-437b-838a-6e53041409ae)
+![231](https://github.com/K-izme/Jenkins-CICD-pipeline/assets/91515708/db8c7110-8f6a-450e-a64d-75f485fbb93a)
+
 
 ```
 npm i
